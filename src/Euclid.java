@@ -12,6 +12,9 @@ public class Euclid {
             min = t;
         }
         while ((min*i) % max != r){
+            if (min == max){
+                break;
+            }
             i++;
         }
         t = i;

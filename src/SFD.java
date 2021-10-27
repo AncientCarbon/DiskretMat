@@ -1,4 +1,4 @@
-// version 1.0.0
+// version 1.1.0
 
 import java.util.Scanner;
 
@@ -24,8 +24,13 @@ public class SFD {
             max = tal2;
             min = tal1;
         }
-
-        System.out.println("Udvidet: " + udvidet[0] + " * " + min + " - " + udvidet[1] + " * " + max + " = " + tal3);
+        if (max == min){
+            System.out.println("Udvidet: 1 * " + min + " - 0 * " + max + " = " + tal3);
+        }
+        else {
+            System.out.println("Udvidet: " + udvidet[0] + " * " + min +
+                    " - " + udvidet[1] + " * " + max + " = " + tal3);
+        }
     }
 }
 

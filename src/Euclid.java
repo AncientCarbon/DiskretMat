@@ -1,8 +1,8 @@
 public class Euclid {
     public static int[] extend(int s, int t, int r) {
         int i = 0;
-        int max = 0;
-        int min = 0;
+        int max;
+        int min;
         if (s<t){
             max = t;
             min = s;

@@ -1,4 +1,4 @@
-// version 1.1.0
+// version 1.1.1
 
 import java.util.Scanner;
 
@@ -7,15 +7,19 @@ public class SFD {
         Scanner in = new Scanner(System.in);
         System.out.print("Første tal: ");
         int tal1 = in.nextInt();
+
         System.out.print("Andet tal: ");
         int tal2 = in.nextInt();
         System.out.println();
+
         int tal3 = greatestCommonDenom.gcd(tal1, tal2);
         System.out.println("sfd = " + tal3);
-        int[] udvidet = new int[2];
-        udvidet = Euclid.extend(tal1, tal2, tal3);
+        int[] udvidet;
         int max;
         int min;
+
+        udvidet = Euclid.extend(tal1, tal2, tal3);
+
         if (tal1 > tal2){
             max = tal1;
             min = tal2;
